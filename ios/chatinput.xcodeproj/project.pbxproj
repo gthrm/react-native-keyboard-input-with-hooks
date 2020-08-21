@@ -16,8 +16,6 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* chatinputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* chatinputTests.m */; };
-		7E40638E24EFEF8B00A8276C /* libRCTCustomInputController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E40638724EFEEC800A8276C /* libRCTCustomInputController.a */; };
-		7E40638F24EFEF9300A8276C /* libKeyboardTrackingView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E40638D24EFEF3100A8276C /* libKeyboardTrackingView.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		D210500D32235300E2847DA0 /* libPods-chatinput-chatinputTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4F83E0637725E3B6279FC21 /* libPods-chatinput-chatinputTests.a */; };
 /* End PBXBuildFile section */
@@ -37,20 +35,6 @@
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
 			remoteInfo = "chatinput-tvOS";
 		};
-		7E40638624EFEEC800A8276C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E40638224EFEEC800A8276C /* RCTCustomInputController.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 39DF4FE71E00394E00F5B4B2;
-			remoteInfo = RCTCustomInputController;
-		};
-		7E40638C24EFEF3100A8276C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7E40638824EFEF3100A8276C /* KeyboardTrackingView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D834CED81CC64F2400FA5668;
-			remoteInfo = KeyboardTrackingView;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -67,8 +51,6 @@
 		2D02E47B1E0B4A5D006451C7 /* chatinput-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chatinput-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* chatinput-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "chatinput-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B415D7A73BDB2E48FEBEAA3 /* Pods-chatinput.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatinput.release.xcconfig"; path = "Target Support Files/Pods-chatinput/Pods-chatinput.release.xcconfig"; sourceTree = "<group>"; };
-		7E40638224EFEEC800A8276C /* RCTCustomInputController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTCustomInputController.xcodeproj; path = "../node_modules/react-native-keyboard-input/lib/ios/RCTCustomInputController.xcodeproj"; sourceTree = "<group>"; };
-		7E40638824EFEF3100A8276C /* KeyboardTrackingView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = KeyboardTrackingView.xcodeproj; path = "../node_modules/react-native-keyboard-tracking-view/lib/KeyboardTrackingView.xcodeproj"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = chatinput/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4F83E0637725E3B6279FC21 /* libPods-chatinput-chatinputTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chatinput-chatinputTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEBCA6426C93CA49CAEB7816 /* libPods-chatinput.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-chatinput.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,9 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E40638F24EFEF9300A8276C /* libKeyboardTrackingView.a in Frameworks */,
 				229E609581BBDB49E3166DAD /* libPods-chatinput.a in Frameworks */,
-				7E40638E24EFEF8B00A8276C /* libRCTCustomInputController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,27 +148,9 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		7E40638324EFEEC800A8276C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7E40638724EFEEC800A8276C /* libRCTCustomInputController.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		7E40638924EFEF3100A8276C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				7E40638D24EFEF3100A8276C /* libKeyboardTrackingView.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				7E40638824EFEF3100A8276C /* KeyboardTrackingView.xcodeproj */,
-				7E40638224EFEEC800A8276C /* RCTCustomInputController.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -337,16 +299,6 @@
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 7E40638924EFEF3100A8276C /* Products */;
-					ProjectRef = 7E40638824EFEF3100A8276C /* KeyboardTrackingView.xcodeproj */;
-				},
-				{
-					ProductGroup = 7E40638324EFEEC800A8276C /* Products */;
-					ProjectRef = 7E40638224EFEEC800A8276C /* RCTCustomInputController.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* chatinput */,
@@ -356,23 +308,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		7E40638724EFEEC800A8276C /* libRCTCustomInputController.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTCustomInputController.a;
-			remoteRef = 7E40638624EFEEC800A8276C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		7E40638D24EFEF3100A8276C /* libKeyboardTrackingView.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libKeyboardTrackingView.a;
-			remoteRef = 7E40638C24EFEF3100A8276C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		00E356EC1AD99517003FC87E /* Resources */ = {
